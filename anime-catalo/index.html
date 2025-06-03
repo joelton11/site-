@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo de Animes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Catálogo de Animes</h1>
+  </header>
+
+  <main class="catalog">
+    <div class="card" onclick="showDetails('Naruto', 'Um jovem ninja que sonha em se tornar Hokage.')">
+      <img src="images/naruto.jpg" alt="Naruto">
+      <h2>Naruto</h2>
+    </div>
+
+    <div class="card" onclick="showDetails('One Piece', 'A jornada de Luffy em busca do One Piece.')">
+      <img src="images/onepiece.jpg" alt="One Piece">
+      <h2>One Piece</h2>
+    </div>
+
+    <div class="card" onclick="showDetails('Attack on Titan', 'Humanidade vs Titãs em uma luta pela sobrevivência.')">
+      <img src="images/aot.jpg" alt="Attack on Titan">
+      <h2>Attack on Titan</h2>
+    </div>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
